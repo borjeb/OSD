@@ -117,7 +117,7 @@ $tsenv.value('OSDTargetSystemPartition') = "0-3" #Assume Disk 0, 3rd Partition, 
 			</OOBE>
 		</component>
 		<component name="Microsoft-Windows-International-Core" language="neutral" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-			<SystemLocale>en-US</SystemLocale>
+			<SystemLocale>nb-NO</SystemLocale>
 		</component>
 	</settings><settings xmlns="urn:schemas-microsoft-com:unattend" pass="specialize"><component name="Microsoft-Windows-Deployment" language="neutral" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			<RunSynchronous>
