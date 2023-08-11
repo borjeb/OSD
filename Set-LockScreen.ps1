@@ -168,8 +168,8 @@ foreach ($filechild in $files)
 
 
 #Download WallPaper from GitHub
-$LockScreenURL = "https://github.com/gwblok/garytown/raw/master/OSD/CloudOSD/lockscreen.jpg"
-Invoke-WebRequest -UseBasicParsing -Uri $LockScreenURL -OutFile "$env:TEMP\lockscreen.jpg"
+#$LockScreenURL = "https://github.com/gwblok/garytown/raw/master/OSD/CloudOSD/lockscreen.jpg"
+#Invoke-WebRequest -UseBasicParsing -Uri $LockScreenURL -OutFile "$env:TEMP\lockscreen.jpg"
 
 #Copy the 2 files into place
 
@@ -177,9 +177,9 @@ Invoke-WebRequest -UseBasicParsing -Uri $LockScreenURL -OutFile "$env:TEMP\locks
 #Copy the 2 files into place
 if (Test-Path -Path "$env:TEMP\lockscreen.jpg"){
     Write-Output "Running Command: Copy-Item $($env:TEMP)\lockscreen.jpg C:\windows\web\Screen\img100.jpg -Force -Verbose"
-    Copy-Item "$env:TEMP\lockscreen.jpg" C:\windows\web\Screen\img100.jpg -Force -Verbose
+    #Copy-Item "$env:TEMP\lockscreen.jpg" C:\windows\web\Screen\img100.jpg -Force -Verbose
     Write-Output "Running Command: Copy-Item $($env:TEMP)\lockscreen.jpg C:\windows\web\Screen\img105.jpg -Force -Verbose"
-    Copy-Item "$env:TEMP\lockscreen.jpg" C:\windows\web\Screen\img105.jpg -Force -Verbose
+    #Copy-Item "$env:TEMP\lockscreen.jpg" C:\windows\web\Screen\img105.jpg -Force -Verbose
     }
 else
     {
