@@ -179,13 +179,13 @@ foreach ($filechild in $files)
 
 
 #Download WallPaper from GitHub
-$WallPaperURL = "https://github.com/gwblok/garytown/raw/master/OSD/CloudOSD/wallpaper.jpg"
-Invoke-WebRequest -UseBasicParsing -Uri $WallPaperURL -OutFile "$env:TEMP\wallpaper.jpg"
+#$WallPaperURL = "https://github.com/gwblok/garytown/raw/master/OSD/CloudOSD/wallpaper.jpg"
+#Invoke-WebRequest -UseBasicParsing -Uri $WallPaperURL -OutFile "$env:TEMP\wallpaper.jpg"
 
 #Copy the 2 files into place
 if (Test-Path -Path "$env:TEMP\wallpaper.jpg"){
     Write-Output "Running Command: Copy-Item .\wallpaper.jpg C:\Windows\Web\Wallpaper\Windows\img0.jpg -Force -Verbose"
-    Copy-Item "$env:TEMP\wallpaper.jpg" "C:\Windows\Web\Wallpaper\Windows\img0.jpg" -Force -Verbose
+    #Copy-Item "$env:TEMP\wallpaper.jpg" "C:\Windows\Web\Wallpaper\Windows\img0.jpg" -Force -Verbose
     }
 else
     {
