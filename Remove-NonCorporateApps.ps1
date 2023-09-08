@@ -51,10 +51,10 @@ $apps += @(
         "Microsoft.XboxIdentityProvider"
         "Microsoft.XboxSpeechToTextOverlay"
         "Microsoft.Advertising.Xaml"
-        #"Microsoft.Getstarted"
-        #"Microsoft.GetHelp"
+        "Microsoft.Getstarted"
+        "Microsoft.GetHelp"
         "Microsoft.Messaging"
-        #"Microsoft.WindowsFeedbackHub"
+        "Microsoft.WindowsFeedbackHub"
         "Microsoft.ZuneMusic"
         "Microsoft.ZuneVideo"
 )
