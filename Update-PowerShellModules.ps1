@@ -35,5 +35,5 @@ if (!(Get-Module -Name PSReadline)){
     $Null = New-Item -Path "$WorkingDir\2.3.4" -ItemType Directory -Force
     Expand-Archive -Path "$WorkingDir\psreadline.2.3.4.zip" -DestinationPath "$WorkingDir\2.3.4"
     $Null = New-Item -Path "$dist\WindowsPowerShell\Modules\PSReadline" -ItemType Directory -ErrorAction SilentlyContinue
-    Move-Item -Path "$WorkingDir\2.3.4" -Destination "$dist\WindowsPowerShell\Modules\PSReadlin\2.3.4"
+    Move-Item -Path "$WorkingDir\2.3.4" -Destination "$dist\WindowsPowerShell\Modules\PSReadline\2.3.4"
     }
