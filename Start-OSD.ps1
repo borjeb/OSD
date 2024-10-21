@@ -20,6 +20,10 @@ $Global:MyOSDCloud = [ordered]@{
         #DriverPackName = "None"
         SkipAutopilot = $true
         SkipODT = $true
+        OSName = $OSName
+        OSEdition = $OSEdition
+        OSActivation = $OSActivation
+        OSLanguage = $OSLanguage
     }
 
 Write-Output "Global:MyOSDCloud"
@@ -34,7 +38,8 @@ Write-Output "Launching OSDCloud"
 Write-Output ""
 Write-Output "Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage"
 Write-Output ""
-Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage
+#Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage
+Start-OSDCloudGUI
 Write-Output ""
 Write-Output "--------------------------------------"
 
