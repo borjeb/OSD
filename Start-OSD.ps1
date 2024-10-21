@@ -20,6 +20,7 @@ $Global:MyOSDCloud = [ordered]@{
         #DriverPackName = "None"
         SkipAutopilot = $true
         SkipODT = $true
+        LaunchMethod = "OSDCloudCLI"
     }
 
 Write-Output "Global:MyOSDCloud"
