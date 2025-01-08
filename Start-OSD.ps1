@@ -4,7 +4,7 @@ Write-Output ""
 Write-Output "OSDCloud Apply OS Step"
 Write-Output ""
 #Set OSDCloud Params
-$OSName = "Windows 11 23H2 x64"
+$OSName = "Windows 11 24H2 x64"
 Write-Output "OSName: $OSName"
 $OSEdition = "Pro"
 Write-Output "OSEdition: $OSEdition"
@@ -38,8 +38,8 @@ Write-Output "Launching OSDCloud"
 Write-Output ""
 Write-Output "Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage"
 Write-Output ""
-#Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage
-Start-OSDCloudGUI
+Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage
+#Start-OSDCloudGUI
 Write-Output ""
 Write-Output "--------------------------------------"
 
