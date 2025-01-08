@@ -71,7 +71,7 @@ $AutopilotOOBEJson = @'
     "PostAction":  "Restart",
     "Run":  "NetworkingWireless",
     "Docs":  "https://autopilotoobe.osdeploy.com/",
-    "Title":  "Stortinget Autopilot Registrering"
+    "Title":  "Autopilot Registrering"
 }
 '@
 If (!(Test-Path "C:\ProgramData\OSDeploy")) {
@@ -80,7 +80,7 @@ If (!(Test-Path "C:\ProgramData\OSDeploy")) {
 $AutopilotOOBEJson | Out-File -FilePath "C:\ProgramData\OSDeploy\OSDeploy.AutopilotOOBE.json" -Encoding ascii -Force
 
 $Params = @{
-    Title = 'Stortinget Autopilot Registrering'
+    Title = 'Autopilot Registrering'
     GroupTag = 'Standard'
     GroupTagOptions = 'Utvikling','Standard'
     Hidden = 'AddToGroup','AssignedComputerName','AssignedUser'
